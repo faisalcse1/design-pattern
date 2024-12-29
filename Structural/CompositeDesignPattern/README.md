@@ -2,7 +2,7 @@
 
 This C# application illustrates the implementation of the Composite Design Pattern to manage a hierarchical structure within a company, simulating the relationships between employees and managers. By treating all components (both employees and managers) uniformly, the pattern facilitates operations across the entire organization's structure.
 
-## Project Overview
+### Project Overview
 
 The Composite Design Pattern is a structural design pattern that organizes objects into tree structures to represent part-whole hierarchies. This pattern allows clients to interact with individual objects and compositions of objects uniformly. In this application, it is specifically applied to simulate an organizational structure, where managers can have subordinates, who could be other managers or simple employees.
 
@@ -85,7 +85,7 @@ class Program
 }
 ```
 
-## Benefits and Drawbacks
+### Benefits and Drawbacks
 ### Pros
 
 - **Uniformity**: Simplifies operations by allowing uniform treatment of both simple and complex elements. This uniformity is crucial for maintaining consistency in how every part of the organizational hierarchy is managed, regardless of its complexity.
