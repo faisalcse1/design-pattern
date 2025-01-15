@@ -76,8 +76,8 @@ class Program
   ## Extended Example with Deep Copy
   Let's add a complex object to the Employee class to illustrate the need for deep copying. Suppose each employee has a list of skills that we want to clone independently.
  ```csharp
-    using System;
-    using System.Collections.Generic;
+using System;
+using System.Collections.Generic;
 
 public interface IPrototype
 {
