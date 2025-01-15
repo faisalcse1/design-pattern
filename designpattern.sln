@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.11.35431.28
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeDesignPattern", "CompositeDesignPattern.csproj", "{115BDE06-C719-41B1-B2A6-ED7C137170AD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural", "Structural", "{4A072460-6BBC-45EB-B4CA-417F41B4B934}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeDesignPattern", "Structural\CompositeDesignPattern\CompositeDesignPattern.csproj", "{115BDE06-C719-41B1-B2A6-ED7C137170AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,7 +21,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {DB4405A2-65C7-4DDA-8E8E-0E4ED88C1109}
+	GlobalSection(NestedProjects) = preSolution
+		{115BDE06-C719-41B1-B2A6-ED7C137170AD} = {4A072460-6BBC-45EB-B4CA-417F41B4B934}
 	EndGlobalSection
 EndGlobal
