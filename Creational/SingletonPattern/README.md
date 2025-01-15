@@ -33,7 +33,7 @@ public class SingletonBasic
         }
     }
 }
-
+```
 
 ### 2. Thread-Safe Singleton with Locking
 This version uses locks to ensure that only one instance of the Singleton is created even when accessed by multiple threads.
@@ -64,7 +64,7 @@ public class SingletonThreadSafe
         }
     }
 }
-
+```
 
 ### 3. Fully Lazy Singleton (Thread-Safe Without Explicit Locks)
 Utilizes Lazy<T> to provide thread safety and lazy instantiation with minimal overhead.
@@ -84,3 +84,4 @@ public class SingletonLazy
 
     private SingletonLazy() { }
 }
+```
