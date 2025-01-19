@@ -23,22 +23,17 @@ This project demonstrates the implementation of the Factory Method design patter
 
 The provided example demonstrates using the Factory Method pattern in a simple logging scenario where the application can log to different storage mechanisms like memory or Redis, potentially extended to other types like files, databases, etc.
 
-### Project Structure
+### Project Structure & Sample Code
 
 - **ILogger**: Interface that defines standard logging behavior.
-- **MemoryLogger**: Logs messages to the console simulating memory storage.
-- **RedisLogger**: Logs messages to the console simulating Redis storage.
-- **LoggerFactory**: Factory class that creates instances of loggers based on specified types.
-- **Program**: Main application entry that uses LoggerFactory to create and utilize loggers.
-
-### Sample Code
-
 ```csharp
 public interface ILogger
 {
     void Log(string message);
-}
+}```
 
+- **MemoryLogger**: Logs messages to the console simulating memory storage.
+```csharp
 public class MemoryLogger : ILogger
 {
     public void Log(string message)
@@ -46,7 +41,9 @@ public class MemoryLogger : ILogger
         Console.WriteLine($"Memory Log: {message}");
     }
 }
-
+```
+- **RedisLogger**: Logs messages to the console simulating Redis storage.
+```csharp
 public class RedisLogger : ILogger
 {
     public void Log(string message)
@@ -54,7 +51,9 @@ public class RedisLogger : ILogger
         Console.WriteLine($"Redis Log: {message}");
     }
 }
-
+```
+- **LoggerFactory**: Factory class that creates instances of loggers based on specified types.
+```csharp
 public enum LoggerType
 {
     Memory,
@@ -76,7 +75,9 @@ public class LoggerFactory
         }
     }
 }
-
+```
+- **Program**: Main application entry that uses LoggerFactory to create and utilize loggers.
+```csharp
 class Program
 {
     static void Main(string[] args)
@@ -91,3 +92,4 @@ class Program
     }
 }
 ```
+
