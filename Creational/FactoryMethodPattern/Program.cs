@@ -10,6 +10,13 @@ namespace FactoryMethodPattern
     {
         static void Main(string[] args)
         {
+            var factory = new LoggerFactory();
+
+            var memoryLogger = factory.CreateLogger(LoggerType.Memory);
+            memoryLogger.Log("This is a simulated memory logger.");
+
+            var redisLogger = factory.CreateLogger(LoggerType.Redis);
+            redisLogger.Log("This is a simulated Redis logger.");
         }
     }
 }
