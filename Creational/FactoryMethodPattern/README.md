@@ -30,8 +30,8 @@ The provided example demonstrates using the Factory Method pattern in a simple l
 public interface ILogger
 {
     void Log(string message);
-}```
-
+}
+```
 - **MemoryLogger**: Logs messages to the console simulating memory storage.
 ```csharp
 public class MemoryLogger : ILogger
