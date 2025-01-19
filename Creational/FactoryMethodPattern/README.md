@@ -1,10 +1,11 @@
-# Factory Method Pattern Logging System
-
-This project demonstrates the implementation of the Factory Method design pattern in a logging system. It includes different loggers such as memory and Redis logger, each simulating specific logging behaviors.
-
-## About the Factory Method Pattern
+# Factory Method Pattern
 
 The Factory Method pattern is a widely used design pattern in object-oriented programming, fitting under the category of creational patterns that deal with object creation mechanisms. This pattern allows a class's instantiation to be deferred to subclasses, thus encapsulating the instantiation logic.
+
+
+## Factory Method Pattern Logging System
+
+This project demonstrates the implementation of the Factory Method design pattern in a logging system. It includes different loggers such as memory and Redis logger, each simulating specific logging behaviors.
 
 ### Why Use the Factory Method Pattern?
 
